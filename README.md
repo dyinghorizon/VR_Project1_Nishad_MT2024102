@@ -1,8 +1,5 @@
 # VR_Project1_Nishad_MT2024102
 
-Based on the PDF document you shared, here's the "How to Run the Code" section in markdown format:
-
-```markdown
 # How to Run the Code
 
 The face mask detection system is implemented in Python with the following dependencies:
@@ -55,4 +52,4 @@ To run the CNN-based face mask detection system, follow these steps:
    ```
    python cnn_mask_detection.py --dataset_path path/to/dataset --model binary --batch_size 16 --optimizer sgd
    ```
-```
+
