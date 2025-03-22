@@ -2,54 +2,28 @@
 
 # How to Run the Code
 
-The face mask detection system is implemented in Python with the following dependencies:
+The face mask detection system is implemented as a Jupyter notebook with the following dependencies:
 
 - NumPy, Pandas
 - scikit-image, OpenCV
 - scikit-learn
 - Matplotlib, Seaborn
+- PyTorch (for CNN implementation)
 
-The implementation follows these steps:
+## Running the code:
 
-1. Extract features from images using HOG, LBP, color histograms, and Haralick features
-2. Apply PCA for dimensionality reduction
-3. Train and evaluate SVM, Neural Network, and Random Forest classifiers
-4. Compare model performance metrics
+1. Ensure all dependencies are installed in your Python environment
+2. Open the notebook file (VR_Project_Part(i).ipynb) in Jupyter Notebook or JupyterLab
+3. Run the code cells sequentially from top to bottom
+4. The implementation flow follows these steps:
+   - Import libraries
+   - Load and visualize dataset
+   - Extract features (HOG, LBP, color histograms, Haralick)
+   - Apply PCA for dimensionality reduction
+   - Train and evaluate SVM, Neural Network, and Random Forest classifiers
+   - Compare model performance metrics
 
-## For CNN-based approach:
-
-To run the CNN-based face mask detection system, follow these steps:
-
-1. Ensure you have PyTorch, torchvision, and other required libraries installed:
-   ```
-   pip install torch torchvision numpy pandas matplotlib scikit-learn pillow
-   ```
-
-2. Organize your dataset into the following structure:
-   ```
-   dataset/
-       with_mask/
-           img1.jpg
-           img2.jpg
-           ...
-       without_mask/
-           img1.jpg
-           img2.jpg
-           ...
-   ```
-
-3. Run the CNN training script:
-   ```
-   python cnn_mask_detection.py --dataset_path path/to/dataset
-   ```
-
-4. To experiment with different hyperparameters:
-   ```
-   python cnn_mask_detection.py --dataset_path path/to/dataset --batch_size 16 --learning_rate 0.001 --dropout 0.3 --epochs 10 --optimizer adam
-   ```
-
-5. To run the binary classification model with BCEWithLogitsLoss:
-   ```
-   python cnn_mask_detection.py --dataset_path path/to/dataset --model binary --batch_size 16 --optimizer sgd
-   ```
-
+For the CNN implementation:
+- Additional cells implement different CNN architectures
+- Run these cells sequentially after the initial feature-based approach
+- The notebook includes various experimental configurations for hyperparameter tuning
