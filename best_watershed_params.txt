@@ -1,0 +1,14 @@
+{
+    "opening_kernel_size": [
+        5,
+        5
+    ],
+    "opening_iterations": 1,
+    "dilation_iterations": 3,
+    "distance_threshold_ratio": 0.7,
+    "morph_kernel_size": [
+        3,
+        3
+    ],
+    "morph_iterations": 1
+}
