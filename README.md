@@ -35,6 +35,7 @@ This project involves watershed-based segmentation, binary classification, and U
    ```sh
    pip install -r requirements.txt
    ```
+4. Download the datasets from https://github.com/chandrikadeb7/Face-Mask-Detection/tree/master/dataset and https://github.com/sadjadrz/MFSD, and include them in your root directory. 
 
 ## Usage
 ### 1. Binary Classification
