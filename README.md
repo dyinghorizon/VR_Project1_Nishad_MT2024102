@@ -15,7 +15,6 @@ This project involves watershed-based segmentation, binary classification, and U
 ├── best_wateshed.py               # Python script for optimized watershed segmentation
 ├── requirements.txt               # List of dependencies
 ├── unet-mask-segmentation.ipynb   # Notebook for U-Net based segmentation
-├── unet.py                        # U-Net model implementation
 ├── watershed.py                   # Watershed segmentation script
 ```
 
